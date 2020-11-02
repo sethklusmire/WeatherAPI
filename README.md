@@ -1,1 +1,1 @@
-# week6homework
+Weather AP! Had fun with this one, became pretty straight forward once I got the API to work. Also thought it was fantastic practice for the project.
