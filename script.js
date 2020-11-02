@@ -4,7 +4,7 @@ let apiId = "524901";
 
 function findWeather(city) {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?id=${apiId}&appid=${apiKey}&q=${city}`
+    `https://api.openweathermap.org/data/2.5/weather?id=${apiId}&appid=${apiKey}&q=${city}`
   )
     .then(function (response) {
       return response.json();
@@ -14,7 +14,7 @@ function findWeather(city) {
       let lat = data.coord.lat;
       let lon = data.coord.lon;
       return fetch(
-        `http://api.openweathermap.org/data/2.5/onecall?id=${apiId}&appid=${apiKey}&lat=${lat}&lon=${lon}&units=imperial`
+        `https://api.openweathermap.org/data/2.5/onecall?id=${apiId}&appid=${apiKey}&lat=${lat}&lon=${lon}&units=imperial`
       );
     })
     .then(function (response) {
